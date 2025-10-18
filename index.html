@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rafael Monroig – Data & AI Strategist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engagement Manager at McKinsey QuantumBlack | B.Sc. Computer Engineering | M.A. Computational Linguistics">
+
+  <!-- ======  CSS  ====== -->
+  <style>
+    :root{
+      --primary:#003366;
+      --accent:#00c2ff;
+      --bg:#f7f9fc;
+      --text:#222;
+      --light:#fff;
+      --gray:#888;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.6;}
+    a{color:var(--primary);text-decoration:none;}
+    h1,h2,h3{color:var(--primary);}
+    section{padding:60px 20px;max-width:1000px;margin:auto;}
+    .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px;}
+    .hero-text{flex:1 1 400px;}
+    .hero h1{font-size:2.4em;margin-bottom:10px;}
+    .hero p{font-size:1.1em;color:var(--gray);}
+    .btn{display:inline-block;margin-top:15px;padding:10px 22px;background:var(--accent);color:var(--light);border-radius:4px;font-weight:600;}
+    .card{background:var(--light);border-radius:8px;padding:25px;margin-bottom:25px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+    .grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .skills-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;}
+    .skills-grid span{background:var(--primary);color:var(--light);padding:6px 12px;border-radius:20px;font-size:.85em;}
+    .chart-box{position:relative;height:220px;margin-top:20px;}
+    footer{text-align:center;padding:30px 10px;font-size:.8em;color:var(--gray);}
+    /* AOS animate once */
+    [data-aos]{opacity:0;transition:opacity .8s ease,transform .8s ease;}
+    [data-aos].aos-animate{opacity:1;transform:none;}
+  </style>
+</head>
+
+<body>
+  <!-- ---------- HERO ---------- -->
+  <section class="hero">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Rafael Monroig</h1>
+      <p>Data & AI Strategist</p>
+      <p>Engagement Manager @ McKinsey QuantumBlack</p>
+      <p>Madrid, Spain · +34 669 955 058</p>
+      <a class="btn" href="mailto:rmonroigvives@gmail.com">Contact me</a>
+      <a class="btn" style="margin-left:10px;background:#0077b5;" href="https://linkedin.com/in/rmonroig" target="_blank">LinkedIn</a>
+    </div>
+    <div class="chart-box" data-aos="fade-left">
+      <canvas id="langChart"></canvas>
+    </div>
+  </section>
+
+  <!-- ---------- EXPANDED CAREER ---------- -->
+<section data-aos="fade-up">
+  <h2>Strategy & Leadership Highlights</h2>
+
+  <!-- McKinsey – Engagement Manager -->
+  <div class="card">
+    <h3>McKinsey & Company – QuantumBlack | Engagement Manager (2024-now)</h3>
+    <ul>
+      <li><strong>Enterprise AI & Data Strategy – Global Financial Institution ($40 B AUM)</strong>
+        <br>‐ Orchestrated 5-year corporate-wide AI & data transformation covering 25 countries, 15 k+ engineers, 200+ data scientists.
+        <br>‐ Designed governance model (C-suite Data Board, OKR cascade, 100-day sprint cycles) now institutionalised at board level.
+        <br>‐ Moved 60 % of analytics workloads to cloud, unlocking $18 M annual run-rate savings and 4× faster model deployment.</li>
+
+      <li><strong>Customer-Experience (CX) Transformation – Japan’s Largest Telecom (80 M subscribers)</strong>
+        <br>‐ Defined CX vision and north-star metric adopted by 10 k frontline employees; NPS +12 pp within 9 months.
+        <br>‐ Built real-time CX data product (Kafka, GCP, Looker) feeding 200+ micro-services; reduced churn 1.3 pp, worth ~$90 M ARR.</li>
+
+      <li><strong>CAPEX Optimisation – Indonesian Telco (100 M users, $100 M annual portfolio)</strong>
+        <br>‐ Led cross-functional squads (finance, network, strategy) to create ML-driven capital-allocation engine.
+        <br>‐ Delivered $2.8 M yearly savings and 15 % IRR uplift; model embedded in annual budgeting playbook.</li>
+
+      <li><strong>Generative AI Go-to-Market – Travel & Logistics Client (13 k employees)</strong>
+        <br>‐ Pioneered firm’s first Gen-AI offering: chatbots, automated reporting, coding co-pilot; signed €4 M in new client engagements within 6 months.
+        <br>‐ Established centre of excellence, training curriculum and reusable accelerators now leveraged by 30+ client teams.</li>
+    </ul>
+  </div>
+
+  <!-- McKinsey – Associate -->
+  <div class="card">
+    <h3>McKinsey & Company – QuantumBlack | Associate (2023-2024)</h3>
+    <ul>
+      <li><strong>Software Transformation Platform – Global Roll-out</strong>
+        <br>‐ Product-managed central control tower empowering 10 k+ developers to adopt cloud-native, DevSecOps and FinOps best practices.
+        <br>‐ Reduced average feature lead-time 40 % and cloud waste 25 % across pilot business units.</li>
+
+      <li><strong>Infrastructure-as-Code Centre of Excellence</strong>
+        <br>‐ Authored firm-wide IaC playbook (Terraform, Ansible, policy-as-code) adopted by 50+ client engagements.
+        <br>‐ Mentored 25 senior engineers, created certification track now part of McKinsey Technology Graduate Programme.</li>
+    </ul>
+  </div>
+
+    <!-- Busuu – Data & Growth -->
+  <div class="card">
+    <h3>Busuu (EdTech, 100 M users) – Senior Data Engineer / Growth Analytics Lead (2022-2023)</h3>
+    <ul>
+      <li><strong>Payment Gateway Profit-improvement Programme</strong>
+        <br>Increased net margin 110 bps (≈ €770 k annual EBITDA) while maintaining authorisation-rate KPIs.</li>
+    </ul>
+    
+    <ul>
+      <li><strong>Data Platform Modernisation</strong>
+        <br>‐ Spearheaded migration from legacy Postgres to AWS Redshift + dbt + Airflow</li>
+    </ul>
+  </div>
+
+  <!-- Accenture – Strategy & AI -->
+  <div class="card">
+    <h3>Accenture Strategy – Applied Intelligence | Senior Analyst (2021-2022)</h3>
+    <ul>
+      <li><strong>Supply-Chain Resilience – European Aerospace Leader</strong>
+        <br>‐ Built digital twin on Palantir Foundry integrating 12 ERP instances; enabled scenario planning that shortened critical-part lead-time 18 %.</li>
+    </ul>
+  </div>
+
+  <!-- Early Career -->
+  <div class="card">
+    <h3>Early Career – Insurance & Financial Services (2018-2021)</h3>
+    <ul>
+      <li><strong>Linea Directa Aseguradora</strong> – Designed predictive call-routing engine reducing average handling time 25 % and churn 0.8 pp.</li>
+      <li><strong>EY FSO</strong> – Led 8-person team delivering client-segmentation and risk-modelling solutions for top-tier Spanish bank; models in production for €200 B retail portfolio.</li>
+    </ul>
+  </div>
+
+  <!-- Charts still live here -->
+  <div class="chart-box">
+    <canvas id="expChart"></canvas>
+  </div>
+</section>
+
+  <!-- ---------- EDUCATION ---------- -->
+  <section data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>B.Sc. Computer Engineering</h4>
+        <p>Universitat Oberta de Catalunya (UOC) · 2024</p>
+      </div>
+      <div class="card">
+        <h4>M.A. Computational Linguistics</h4>
+        <p>University of Western Ontario · 2018</p>
+      </div>
+      <div class="card">
+        <h4>Big Data Technologies</h4>
+        <p>Deusto University · 2019</p>
+      </div>
+      <div class="card">
+        <h4>BBA + CEMS MIM</h4>
+        <p>ESADE & Ivey · 2015</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- SKILLS ---------- -->
+  <section data-aos="fade-up">
+    <h2>Technical Skills</h2>
+    <div class="card">
+      <h4>Languages</h4>
+      <div class="skills-grid">
+        <span>Python</span><span>SQL</span><span>R</span><span>Java</span><span>JavaScript</span><span>PHP</span>
+      </div>
+      <h4 style="margin-top:15px;">Cloud & Big-Data</h4>
+      <div class="skills-grid">
+        <span>AWS</span><span>Azure</span><span>Spark</span><span>Hadoop</span><span>Cloudera</span>
+      </div>
+      <h4 style="margin-top:15px;">ML / NLP</h4>
+      <div class="skills-grid">
+        <span>scikit-learn</span><span>MLlib</span><span>NLTK</span><span>Stan</span>
+      </div>
+    </div>
+    <div class="chart-box">
+      <canvas id="skillChart"></canvas>
+    </div>
+  </section>
+
+  <!-- ---------- PUBLICATIONS ---------- -->
+  <section data-aos="fade-up">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>“Deletion and Lenition of Spanish Intervocalic /d/” – QODAS 2017</li>
+      <li>“Social Networks & Polarization during 2017 Catalan Elections” – Western 2018</li>
+      <li>“Cohesion of National Communities under Stress” – Universitas Humanística 2019</li>
+    </ul>
+  </section>
+
+  <!-- ---------- FOOTER ---------- -->
+  <footer>
+    © 2025 Rafael Monroig · built with vanilla HTML & Chart.js
+  </footer>
+
+  <!-- ======  SCRIPTS  ====== -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // ---------- Languages doughnut ----------
+    new Chart(document.getElementById('langChart'),{
+      type:'doughnut',
+      data:{
+        labels:['Spanish','Catalan','English','German'],
+        datasets:[{
+          data:[100,100,90,40],
+          backgroundColor:['#003366','#00c2ff','#ff9f1c','#c4c4c4']
+        }]
+      },
+      options:{plugins:{legend:{position:'bottom'},title:{display:true,text:'Language Proficiency (%)'}}}
+    });
+
+    // ---------- Skills radar ----------
+    new Chart(document.getElementById('skillChart'),{
+      type:'radar',
+      data:{
+        labels:['Python','SQL','Cloud','ML','DevOps','Viz'],
+        datasets:[{
+          label:'Proficiency',
+          data:[95,90,85,88,75,80],
+          fill:true,
+          backgroundColor:'rgba(0,194,255,.2)',
+          borderColor:'#00c2ff',
+          pointBackgroundColor:'#003366'
+        }]
+      },
+      options:{scales:{r:{angleLines:{display:false},ticks:{display:false},pointLabels:{font:{size:14}}}}},
+    });
+
+    // ---------- Experience timeline bar ----------
+    new Chart(document.getElementById('expChart'),{
+      type:'bar',
+      data:{
+        labels:['CulturePlex','EY','Linea Directa','Accenture','Busuu','McKinsey'],
+        datasets:[{
+          label:'Years',
+          data:[2,2,1,0.5,1,2],
+          backgroundColor:'#003366'
+        }]
+      },
+      options:{
+        plugins:{legend:{display:false},title:{display:true,text:'Professional Journey (years)'}},
+        scales:{y:{beginAtZero:true}}
+      }
+    });
+
+    // ---------- AOS simple trigger ----------
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) entry.target.classList.add('aos-animate');
+      });
+    },{threshold:.2});
+    document.querySelectorAll('[data-aos]').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>

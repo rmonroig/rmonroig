@@ -1,3 +1,55 @@
+  <!-- ======  SCRIPTS  ====== -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    /* ---------- PHOTO: replace base64 string below with your own ---------- */
+    const imgSrc = 'data:image/jpeg;base64,REPLACE_WITH_YOUR_BASE64_STRING';
+    /* fallback silhouette if user skips the swap */
+    document.getElementById('headshot').src = imgSrc || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI3MCIgY3k9IjcwIiByPSI3MCIgZmlsbD0iI2UwZTBlMCIvPjxjaXJjbGUgY3g9IjcwIiBjeT0iNTAiIHI9IjMwIiBmaWxsPSIjOWE5YTlhIi8+PGVsbGlwc2UgY3g9IjcwIiBjeT0iMTEwIiByeD0iNDAiIHJ5PSIyNSIgZmlsbD0iIzlhOWE5YSIvPjwvc3ZnPg==';
+
+    /* ---------- Experience Timeline Bar ---------- */
+    new Chart(document.getElementById('expChart'),{
+      type:'bar',
+      data:{
+        labels:['CulturePlex','EY','Linea Directa','Accenture','Busuu','McKinsey'],
+        datasets:[{
+          label:'Years',
+          data:[2,2,1,0.5,1,2],
+          backgroundColor:'#003366'
+        }]
+      },
+      options:{
+        plugins:{legend:{display:false},title:{display:true,text:'Professional Journey (years)'}},
+        scales:{y:{beginAtZero:true}}
+      }
+    });
+
+    /* ---------- Skills Radar ---------- */
+    new Chart(document.getElementById('skillChart'),{
+      type:'radar',
+      data:{
+        labels:['Python','SQL','Cloud','ML','DevOps','Viz'],
+        datasets:[{
+          label:'Proficiency',
+          data:[95,90,85,88,75,80],
+          fill:true,
+          backgroundColor:'rgba(0,194,255,.2)',
+          borderColor:'#00c2ff',
+          pointBackgroundColor:'#003366'
+        }]
+      },
+      options:{scales:{r:{angleLines:{display:false},ticks:{display:false},pointLabels:{font:{size:14}}}}},
+    });
+
+    /* ---------- AOS simple trigger ---------- */
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) entry.target.classList.add('aos-animate');
+      });
+    },{threshold:.2});
+    document.querySelectorAll('[data-aos]').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +85,7 @@
     footer{text-align:center;padding:30px 10px;font-size:.8em;color:var(--gray);}
 
     /* ----- photo ----- */
-    .headshot{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);}
+    .headshot{width:140px;height:140px;}
 
     /* ----- language rings ----- */
     .rings{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:20px;}
@@ -56,7 +108,7 @@
       <a class="btn" style="margin-left:10px;background:#0077b5;" href="https://linkedin.com/in/rmonroig" target="_blank">LinkedIn</a>
     </div>
     <div data-aos="fade-left">
-      <img id="headshot" class="headshot" src="./3x4.JPG" alt="Rafael Monroig">
+<!--      <img id="headshot"  class="headshot"  src="./3x4.JPG" alt="Rafael Monroig">-->
       <!-- language rings -->
       <div class="rings">
         <div class="ring"><svg width="90" height="90"><circle cx="45" cy="45" r="40" stroke="#e0e0e0" stroke-width="8" fill="none"></circle><circle cx="45" cy="45" r="40" stroke="#003366" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="0"></circle></svg><div class="value">100%</div><div class="label">Spanish</div></div>

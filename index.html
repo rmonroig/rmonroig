@@ -6,26 +6,29 @@
     <title>Rafael Monroig - Professional Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .animate-fadeInUp {
-            animation: fadeInUp 0.6s ease-out;
-        }
+      @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out;
+    }
+        
+        
     </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-24 px-6">
         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
-
+        <div>
+        <div>
             <!-- Profile Image -->
             <div class="relative group">
                 <div class="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
@@ -78,34 +81,31 @@
         </div>
     </section>
 
-    <!-- Interactive Timeline -->
-    <section class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex items-center gap-3 mb-12">
-                <svg class="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                </svg>
-                <h2 class="text-3xl font-light text-blue-900 tracking-wide uppercase">
-                    Career Journey
-                </h2>
-            </div>
-            <div class="h-1 w-20 bg-gradient-to-r from-amber-400 to-amber-600 mb-16"></div>
-
-            <!-- Desktop Timeline -->
-            <div class="hidden lg:block relative pb-32">
-                <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-300 to-amber-400"></div>
-
-                <div class="relative flex justify-between items-start" id="timeline-desktop">
-                    <!-- Timeline items will be inserted here by JavaScript -->
-                </div>
-            </div>
-
-            <!-- Mobile Timeline -->
-            <div class="lg:hidden space-y-6" id="timeline-mobile">
-                <!-- Timeline items will be inserted here by JavaScript -->
-            </div>
+      <!-- Collapsed Timeline -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center justify-between mb-12">
+        <div class="flex items-center gap-3">
+          <svg class="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          <h2 class="text-3xl font-light text-blue-900 tracking-wide uppercase">Career Journey</h2>
         </div>
-    </section>
+      </div>
+
+      <div class="h-1 w-20 bg-gradient-to-r from-amber-400 to-amber-600 mb-16"></div>
+
+      <!-- Desktop Timeline -->
+      <div class="hidden lg:block relative pb-32">
+        <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-300 to-amber-400"></div>
+        <div class="relative flex justify-between items-start" id="timeline-desktop"></div>
+      </div>
+
+      <!-- Mobile Timeline -->
+      <div class="lg:hidden space-y-6" id="timeline-mobile"></div>
+    </div>
+  </section>
 
     <!-- Career Highlights -->
     <section class="py-20 px-6 bg-gradient-to-br from-slate-50 to-white">
@@ -115,7 +115,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
                 <h2 class="text-3xl font-light text-blue-900 tracking-wide uppercase">
-                    Strategy & Leadership Highlights
+                    Key Achievements & Leadership Experience
                 </h2>
             </div>
             <div class="h-1 w-20 bg-gradient-to-r from-amber-400 to-amber-600 mb-16"></div>
@@ -405,115 +405,117 @@
     </footer>
 
     <script>
-        // Timeline data
-        const timelineData = [
-            {
-                year: '2018-2020',
-                company: 'EY FSO',
-                role: 'Data Consultant',
-                description: 'Led 8-person team delivering client-segmentation and risk-modelling solutions for top-tier Spanish bank',
-                icon: '🏦'
-            },
-            {
-                year: '2021-2022',
-                company: 'Accenture Strategy',
-                role: 'Senior Analyst',
-                description: 'Built digital twin on Palantir Foundry integrating 12 ERP instances for European aerospace leader',
-                icon: '✈️'
-            },
-            {
-                year: '2022-2023',
-                company: 'Busuu',
-                role: 'Senior Data Engineer',
-                description: 'Owned P&L analysis across 70M EUR revenue, increased net margin 110 bps',
-                icon: '🎓'
-            },
-            {
-                year: '2023-2024',
-                company: 'McKinsey QB',
-                role: 'Associate',
-                description: 'Product-managed central control tower empowering 10k+ developers to adopt cloud-native practices',
-                icon: '💡'
-            },
-            {
-                year: '2024-NOW',
-                company: 'McKinsey QB',
-                role: 'Engagement Manager',
-                description: 'Orchestrated 5-year corporate-wide AI & data transformation covering 25 countries',
-                icon: '🚀'
-            }
-        ];
+    // Full dataset
+    const timelineData = [
+      {
+        year: '2018-2020',
+        company: 'EY FSO',
+        role: 'Data Consultant',
+        description: 'Led 8-person team delivering segmentation and risk-modelling solutions for top-tier bank.',
+        icon: '🏦'
+      },
+      {
+        year: '2021-2022',
+        company: 'Accenture Strategy',
+        role: 'Senior Analyst',
+        description: 'Built digital twin integrating 12 ERP instances; improved planning efficiency 18%.',
+        icon: '✈️'
+      },
+      {
+        year: '2022-2023',
+        company: 'Busuu',
+        role: 'Senior Data Engineer',
+        description: 'Owned P&L analysis across €70M revenue, increased net margin 110bps.',
+        icon: '🎓'
+      },
+      {
+        year: '2023-2024',
+        company: 'McKinsey QB',
+        role: 'Associate',
+        description: 'Product-managed control tower enabling 10k+ developers to adopt cloud-native practices.',
+        icon: '💡'
+      },
+      {
+        year: '2024-NOW',
+        company: 'McKinsey QB',
+        role: 'Engagement Manager',
+        description: 'Orchestrated 5-year AI & data transformation covering 25 countries.',
+        icon: '🚀'
+      }
+    ];
 
-        let activeTimelineItem = null;
+    // Keep only Busuu and later (chronological)
+    const busuuIndex = timelineData.findIndex(d => d.company === 'Busuu');
+    const collapsedTimeline = timelineData.slice(busuuIndex);
 
-        // Render desktop timeline
-        const timelineDesktop = document.getElementById('timeline-desktop');
-        timelineData.forEach((item, index) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'relative flex flex-col items-center group cursor-pointer';
-            itemDiv.style.width = `${100 / timelineData.length}%`;
-            
-            itemDiv.innerHTML = `
-                <!-- Dot -->
-                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
-                    <div class="w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-lg group-hover:scale-125 transition-transform"></div>
-                </div>
+    const timelineDesktop = document.getElementById('timeline-desktop');
+    const timelineMobile = document.getElementById('timeline-mobile');
 
-                <!-- Year Badge -->
-                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-12 whitespace-nowrap">
-                    <div class="px-4 py-1.5 bg-blue-900 text-white text-xs font-medium rounded-sm shadow-md">
-                        ${item.year}
-                    </div>
-                </div>
+    function renderTimeline() {
+      timelineDesktop.innerHTML = '';
+      timelineMobile.innerHTML = '';
 
-                <!-- Content Card -->
-                <div class="timeline-card absolute top-0 left-1/2 transform -translate-x-1/2 mt-16 w-48 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
-                    <div class="bg-white p-5 rounded-lg shadow-xl border-t-4 border-blue-900">
-                        <div class="text-3xl mb-3 text-center">${item.icon}</div>
-                        <h4 class="font-semibold text-blue-900 text-sm mb-1 text-center">${item.company}</h4>
-                        <p class="text-xs text-gray-600 mb-3 text-center">${item.role}</p>
-                        <p class="text-xs text-gray-500 leading-relaxed">${item.description}</p>
-                    </div>
-                </div>
-            `;
+      // Horizontal (desktop) - chronological
+      collapsedTimeline.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'relative flex flex-col items-center group cursor-pointer';
+        itemDiv.style.width = `${100 / collapsedTimeline.length}%`;
 
-            itemDiv.addEventListener('mouseenter', function() {
-                const card = this.querySelector('.timeline-card');
-                card.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-                card.classList.add('opacity-100', 'translate-y-0');
-            });
+        itemDiv.innerHTML = `
+          <!-- Dot -->
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
+            <div class="w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-lg group-hover:scale-125 transition-transform"></div>
+          </div>
 
-            itemDiv.addEventListener('mouseleave', function() {
-                const card = this.querySelector('.timeline-card');
-                card.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-                card.classList.remove('opacity-100', 'translate-y-0');
-            });
+          <!-- Year Badge -->
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-12 whitespace-nowrap">
+            <div class="px-4 py-1.5 bg-blue-900 text-white text-xs font-medium rounded-sm shadow-md">
+              ${item.year}
+            </div>
+          </div>
 
-            timelineDesktop.appendChild(itemDiv);
+          <!-- Content Card -->
+          <div class="timeline-card absolute top-0 left-1/2 transform -translate-x-1/2 mt-16 w-48 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
+            <div class="bg-white p-5 rounded-lg shadow-xl border-t-4 border-blue-900">
+              <div class="text-3xl mb-3 text-center">${item.icon}</div>
+              <h4 class="font-semibold text-blue-900 text-sm mb-1 text-center">${item.company}</h4>
+              <p class="text-xs text-gray-600 mb-3 text-center">${item.role}</p>
+              <p class="text-xs text-gray-500 leading-relaxed">${item.description}</p>
+            </div>
+          </div>
+        `;
+
+        itemDiv.addEventListener('mouseenter', function () {
+          const card = this.querySelector('.timeline-card');
+          card.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+          card.classList.add('opacity-100', 'translate-y-0');
         });
-
-        // Render mobile timeline
-        const timelineMobile = document.getElementById('timeline-mobile');
-        timelineData.forEach((item, index) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'relative pl-12';
-            
-            itemDiv.innerHTML = `
-                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center text-xl shadow-lg">
-                    ${item.icon}
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-amber-500 hover:shadow-xl transition-shadow">
-                    <div class="inline-block px-3 py-1 bg-blue-900 text-white text-xs font-medium rounded-sm mb-3">
-                        ${item.year}
-                    </div>
-                    <h4 class="font-semibold text-blue-900 text-lg mb-1">${item.company}</h4>
-                    <p class="text-sm text-gray-600 mb-3">${item.role}</p>
-                    <p class="text-sm text-gray-700 leading-relaxed">${item.description}</p>
-                </div>
-            `;
-
-            timelineMobile.appendChild(itemDiv);
+        itemDiv.addEventListener('mouseleave', function () {
+          const card = this.querySelector('.timeline-card');
+          card.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          card.classList.remove('opacity-100', 'translate-y-0');
         });
+        timelineDesktop.appendChild(itemDiv);
+      });
+
+      // Vertical (mobile) - reverse order (latest first)
+      collapsedTimeline.slice().reverse().forEach(item => {
+        const mobDiv = document.createElement('div');
+        mobDiv.className = 'bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-900 animate-fadeInUp';
+        mobDiv.innerHTML = `
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold text-blue-900 bg-blue-100 px-2 py-1 rounded">${item.year}</span>
+            <span class="text-2xl">${item.icon}</span>
+          </div>
+          <h4 class="text-blue-900 font-semibold">${item.company}</h4>
+          <p class="text-sm text-gray-700 mb-2">${item.role}</p>
+          <p class="text-sm text-gray-600">${item.description}</p>
+        `;
+        timelineMobile.appendChild(mobDiv);
+      });
+    }
+
+    renderTimeline();
     </script>
 </body>
 </html>
